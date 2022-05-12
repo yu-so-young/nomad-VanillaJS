@@ -14,8 +14,6 @@ const colors = ["#1abc9c", "#3498db", "#9b59b6", "#f39c12", "#e74c3c"];
 */
 
 const title = document.querySelector("h2");
-alert("dd");
-title.innerText = "dddd";
 const superEventHandler = {
   handleMouseEnter: function () {
     title.innerText = "The mouse is here!";
