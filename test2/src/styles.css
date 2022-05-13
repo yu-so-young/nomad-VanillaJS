@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+  background-color: "pink";
+}
+
+.narrow {
+  background-color: "blue";
+}
+
+.wide {
+  background-color: "purple";
+}
