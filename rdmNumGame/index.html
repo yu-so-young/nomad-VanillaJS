@@ -6,22 +6,25 @@
 <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 
-<title>Momentum</title>
+<title>Random Number Game</title>
 </head>
 
-
 <body>
+<h1>Random Number Game</h1>
+<form id="game">
+    <h2 id="usermax">Generate a number between 0 and <input type="number" required />
+    </h2>
+    <h3 id="userinput">Guess the number: 
+        <input type="number">
+        <button>Play!</button>
+        <div class="hidden" id="result">
+            <h3>You lost!</h3>
+        </div>
+    </h3>
+</form>
     <!-- input 유효성 검사를 하려면 form 형태여야 함 -->
     <!-- 그런데 form에서 버튼이나 type="submit" 인 것을 클릭하면 submit 하면 html 이 새로고침됨 -->
     <!-- 새로고침 하지 않고(즉 submit 하지 않고) username 을 가져오려면? -->
-    <form id="login-form" class="hidden">
-        <input required
-        maxlength = "15"
-        minlength = "3"
-        type="text" placeholder="What is your name?" />
-        <button>Log In</button>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
 <script src="app.js"></script>
 </body>
 
