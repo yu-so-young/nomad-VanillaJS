@@ -1,7 +1,12 @@
 body {
-    background-color: aquamarine;
-}
-
-.hidden {
+    background-color: rgb(181, 234, 168);
+  }
+  
+  .hidden {
     display: none;
-}
+  }
+  
+  .result {
+    font-weight: lighter;
+  }
+  

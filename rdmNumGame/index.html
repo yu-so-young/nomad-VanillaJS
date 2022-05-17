@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF=8">
-<meta http-equiv="X-UA-Compatible" content="IE+edge">
-<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF=8" />
+    <meta http-equiv="X-UA-Compatible" content="IE+edge" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
-<title>Random Number Game</title>
-</head>
+    <title>Random Number Game</title>
+  </head>
 
-<body>
-<h1>Random Number Game</h1>
-<form id="game">
-    <h2 id="usermax">Generate a number between 0 and <input type="number" required />
-    </h2>
-    <h3 id="userinput">Guess the number: 
-        <input type="number">
+  <body>
+    <h1>Random Number Game</h1>
+    <form id="game">
+      <h2 id="usermax">
+        Generate a number between 0 and <input type="number" required />
+      </h2>
+      <h3 id="userinput">
+        Guess the number:
+        <input type="number" />
         <button>Play!</button>
-        <div class="hidden" id="result">
-            <h3>You lost!</h3>
-        </div>
-    </h3>
-</form>
+        <br />
+        <div class="hidden result" id="result1"></div>
+        <div class="hidden" id="result2"></div>
+      </h3>
+    </form>
     <!-- input 유효성 검사를 하려면 form 형태여야 함 -->
     <!-- 그런데 form에서 버튼이나 type="submit" 인 것을 클릭하면 submit 하면 html 이 새로고침됨 -->
     <!-- 새로고침 하지 않고(즉 submit 하지 않고) username 을 가져오려면? -->
-<script src="app.js"></script>
-</body>
-
-
+    <script src="app.js"></script>
+  </body>
 </html>
