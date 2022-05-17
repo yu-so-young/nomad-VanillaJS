@@ -2,26 +2,25 @@
 
 function handleWindowResize() {
   const windowSize = window.innerWidth;
+  let change;
+  let current = body.className;
+  
   if(windowSize <= 300) {
-    body.classList.add("narrow");
-    if(body.classList.contains("wide")) {
-      body.classList.remove("wide");
-    }
+    change = "narrow";
+
   }
   else if(windowSize >= 800) {
-    body.classList.add("wide");
-    if(body.classList.contains("narrow")) {
-      body.classList.remove("narrow");
-    }
+    change = "wide"
   }
-  else {
-    if(body.classList.contains("narrow")) {
-      body.classList.remove("narrow");
-    }
-    if(body.classList.contains("wide")) {
-      body.classList.remove("wide");
-    }
+  // 기본이라면
+  else { 
+    change = "default"
   }
+
+  if(change != current) {
+    current = change;
+  }
+
   
 };
 
