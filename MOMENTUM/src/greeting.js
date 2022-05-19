@@ -27,6 +27,7 @@ if (savedUsername === null) {
     loginForm.addEventListener("submit", onLoginSubmit);
 } else {
     // show the greetings 
+    loginForm.classList.add(HIDDEN_CLASSNAME);
     paintGreetings(savedUsername);
  }
 
