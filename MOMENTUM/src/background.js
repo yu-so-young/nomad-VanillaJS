@@ -18,8 +18,12 @@ const colors = [
     "#ffd32a",
     "#ff3f34"
   ];
+
+const bgImgs = [
+  // implement here
+];
   
-  function changeBgColor() {
+  function gradientColorBg() {
     const BgColor1 = colors[Math.floor(Math.random() * colors.length)];
     const BgColor2 = colors[Math.floor(Math.random() * colors.length)];
     document.body.style.background = `linear-gradient(to right, ${BgColor1}, ${BgColor2})`;

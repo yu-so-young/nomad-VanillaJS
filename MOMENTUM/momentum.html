@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-<meta charset="UTF=8">
-<meta http-equiv="X-UA-Compatible" content="IE+edge">
-<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css">
-
-<title>Momentum</title>
+    <html lang="en">
+    <meta charset="UTF=8">
+    <meta http-equiv="X-UA-Compatible" content="IE+edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>momentum project</title>
 </head>
 
-
 <body>
-    <!-- input 유효성 검사를 하려면 form 형태여야 함 -->
+    <h1 id="greeting" class="hidden"></h1>
+    
     <!-- 그런데 form에서 버튼이나 type="submit" 인 것을 클릭하면 submit 하면 html 이 새로고침됨 -->
-    <!-- 새로고침 하지 않고(즉 submit 하지 않고) username 을 가져오려면? -->
+    <!-- 새로고침 하지 않고(즉 submit 하지 않고) username 을 가져오려면? event.preventDefault()-->
     <form id="login-form" class="hidden">
+        <!-- input 유효성 검사를 하려면 form 형태여야 함 -->
         <input required
         maxlength = "15"
         minlength = "3"
         type="text" placeholder="What is your name?" />
         <button>Log In</button>
     </form>
-    <h1 id="greeting" class="hidden"></h1>
 
-<script src="src/greeting.js"></script> <!--login-->
-<script src="src/background.js"></script> <!--background-->
-<script src="src/clock.js"></script> <!--clock-->
-<script src="src/quote.js"></script> <!--quote-->
-<script src="src/weather.js"></script> <!--weather-->
-
+    <script src="src/greeting.js"></script> <!--login(using local-storage)-->
+    <script src="src/todolist.js"></script> <!--to-do-list(using local-storage)-->
+    <script src="src/background.js"></script> <!--background-->
+    <script src="src/weather.js"></script> <!--weather and geolocation-->
+    <script src="src/clock.js"></script> <!--real-time clock-->
+    <script src="src/quote.js"></script> <!--quote-->
 </body>
 
 
