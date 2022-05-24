@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- Greeting & Login -->
     <h1 id="greeting" class="hidden"></h1>
     <!-- 그런데 form에서 버튼이나 type="submit" 인 것을 클릭하면 submit 하면 html 이 새로고침됨 -->
     <!-- 새로고침 하지 않고(즉 submit 하지 않고) username 을 가져오려면? event.preventDefault()-->
@@ -20,6 +21,17 @@
         type="text" placeholder="What is your name?"/>
         <button>Log In</button>
     </form>
+    
+    <!-- Clock  -->
+    <h1>Time</h1>
+    <h2 id="clock"></h2>
+    
+    <!-- Quotes -->
+    <div id = "quote">
+        <span></span> <!-- quote section -->
+        <span></span> <!-- author section -->
+    </div>
+
 
     <script src="src/greeting.js"></script> <!--login(using local-storage)-->
     <script src="src/todolist.js"></script> <!--to-do-list(using local-storage)-->
