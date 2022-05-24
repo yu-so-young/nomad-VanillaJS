@@ -1,5 +1,7 @@
 body {
     background-color: aquamarine;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color:rgb(32, 32, 34);
 }
 
 .hidden {
