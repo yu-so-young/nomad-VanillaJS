@@ -26,7 +26,7 @@ const bgImgs = [
 function gradientBgColor() {
   const BgColor1 = colors[Math.floor(Math.random() * colors.length)];
   const BgColor2 = colors[Math.floor(Math.random() * colors.length)];
-  document.body.style.background = `linear-gradient(to right, ${BgColor1}, ${BgColor2})`;
+  document.body.style.background = `linear-gradient(${BgColor1}, ${BgColor2})`;
 }
   
 gradientBgColor();
