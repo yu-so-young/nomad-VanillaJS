@@ -6,6 +6,10 @@ const quotes = [
     {
         quote: "q2",
         author: "a2",
+    },
+    {
+        quote: "q3",
+        author: "a3",
     }];
     
     const quote = document.querySelector("#quote span:first-child");
