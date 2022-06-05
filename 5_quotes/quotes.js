@@ -6,7 +6,12 @@ const quotes = [
 {
     quote: "hello",
     author: "you",
-}];
+},
+{
+    quote: "heLLo",
+    author: "you!",
+}
+];
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
