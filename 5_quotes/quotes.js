@@ -10,6 +10,10 @@ const quotes = [
 {
     quote: "heLLo",
     author: "you!",
+},
+{
+    quote: "welcome",
+    author: "we",
 }
 ];
 
